@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   html, body {
+    margin: 0;
     height: 100%;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

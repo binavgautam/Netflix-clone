@@ -1,13 +1,25 @@
 import React from "react";
-import Jumbotron from "./Components/Jumbotron";
-import Footer from "./Components/Footer";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Home, Browse, SignIn, SignUp } from "./Pages";
 
 export default function App() {
   return (
-    <>
-      <Jumbotron />
-      <Footer />
-    </>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+
+        <Route exact path="/browse">
+          <Browse />
+        </Route>
+        <Route exact path="/signin">
+          <SignIn />
+        </Route>
+        <Route exact path="/signup">
+          <SignUp />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
