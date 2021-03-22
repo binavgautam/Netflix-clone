@@ -9,7 +9,7 @@ export default function index({ children }) {
           src="https://raw.githubusercontent.com/karlhadwen/netflix/56498197024f7e1ca95a075eaaa5e4eb0e4bb42b/src/logo.svg"
           to={"/"}
         />
-        <Header.Button>Sign In</Header.Button>
+        <Header.Button to={"/signin"}>Sign In</Header.Button>
       </Header.Frame>
       {children}
     </Header>

@@ -18,6 +18,7 @@ export default function index() {
         <Form>
           <Form.Input placeholder="Email" />
           <Form.Button>Try it Today</Form.Button>
+          <Form.Break />
           <Form.Text>
             Enter your email to sign up or login and start watching Today!
           </Form.Text>

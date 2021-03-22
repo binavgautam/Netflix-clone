@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as ReactRouterLink } from "react-router-dom";
 import { Button, Background, Container, Logo } from "./style";
 
 export default function Header({ bg = true, children, ...restProps }) {
@@ -10,13 +10,17 @@ Header.Frame = function HeaderFrame({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 };
 
-Header.Button = function HeaderButton({ children, ...restProps }) {
-  return <Button {...restProps}>{children}</Button>;
+Header.Button = function HeaderButton({ to, children, ...restProps }) {
+  return (
+    <Button to={to} {...restProps}>
+      {children}
+    </Button>
+  );
 };
 Header.Logo = function HeaderLogo({ to, ...restProps }) {
   return (
-    <Link to={to}>
+    <ReactRouterLink to={to}>
       <Logo {...restProps} />
-    </Link>
+    </ReactRouterLink>
   );
 };

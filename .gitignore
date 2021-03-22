@@ -3,6 +3,8 @@
 # dependencies
 /node_modules
 /.pnp
+todo.txt
+seed.js
 .pnp.js
 
 # testing

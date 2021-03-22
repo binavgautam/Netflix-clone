@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Title, SubTitle } from "./style";
 
 export default function Features({ children, ...restProps }) {
-  return <Container {...restProps}></Container>;
+  return <Container {...restProps}>{children}</Container>;
 }
 
 Features.Title = function FeatureTitle({ children, ...restProps }) {
