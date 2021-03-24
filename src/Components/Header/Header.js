@@ -17,6 +17,7 @@ Header.Button = function HeaderButton({ to, children, ...restProps }) {
     </Button>
   );
 };
+
 Header.Logo = function HeaderLogo({ to, ...restProps }) {
   return (
     <ReactRouterLink to={to}>

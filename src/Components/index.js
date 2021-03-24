@@ -6,3 +6,6 @@ export { default as Card } from "./Card";
 export { Form } from "./Form";
 export { Features } from "./Features";
 export { SignIn } from "./SignIn";
+export { Loading } from "./Loading";
+export { default as Profile } from "./Profile";
+export { default as Browse } from "./Browse";

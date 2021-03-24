@@ -1,7 +1,7 @@
 import React from "react";
 import Accordion from "./Accordion";
-import faqsData from "../../Fixtures/faqs.json";
-import Form from "../Form/Form.js";
+import faqsData from "../../fixtures/faqs.json";
+import { Form } from "../Form";
 
 export default function index() {
   return (
